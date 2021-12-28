@@ -89,35 +89,27 @@ public class Array {
         return this;
     }
 
-    public Array seventhTask()
-    {
+    public Array seventhTask() {
         System.out.println("-----------------------------------------" + "\n7. Вивести найменше значення в масиві:");
-        int minimal=array[0];
-        for (int i=1; i<array.length; i++)
-        {
-                for (int j=0;j< array.length;j++)
-                {
-                    if(array[j]<minimal)
-                    {
-                        minimal=array[j];
-                    }
+        int minimal = array[0];
+        for (int i = 1; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (array[j] < minimal) {
+                    minimal = array[j];
                 }
+            }
         }
         System.out.println(minimal);
         return this;
     }
 
-    public Array eightTask()
-    {
+    public Array eightTask() {
         int max = array[0];
         System.out.println("-----------------------------------------" + "\n8.Вивести найбільше значення в масиві:");
-        for(int i=1; i<array.length;i++)
-        {
-            for (int j=1; i<array.length-1;i++)
-            {
-                if (max<array[j])
-                {
-                    max=array[j];
+        for (int i = 1; i < array.length; i++) {
+            for (int j = 1; i < array.length - 1; i++) {
+                if (max < array[j]) {
+                    max = array[j];
                 }
             }
         }
@@ -125,23 +117,21 @@ public class Array {
         return this;
     }
 
-    public Array ninethTask()
-    {
-        int summa=0;
+    public Array ninethTask() {
+        int summa = 0;
         int i;
         System.out.println("-----------------------------------------" + "\ng 9. Вивести значення парних індексів масиву:");
-        for (i=0; i<array.length; i+=2)
-        {
-            summa+=array[i];
+        for (i = 0; i < array.length; i += 2) {
+            summa += array[i];
         }
         System.out.println(summa);
         return this;
     }
 
-    public Array tenthTask(){
+    public Array tenthTask() {
         System.out.println("-----------------------------------------" + "\n10. Вивести перші 20 символів з таблиці ASCII");
-        for (int c=32; c<53; c++) {
-            System.out.print( (char)c +" ");
+        for (int c = 32; c < 53; c++) {
+            System.out.print((char) c + " ");
         }
         return this;
     }
